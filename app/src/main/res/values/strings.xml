@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Football.pitch</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="create_order">Create Order</string>
+    <string name="create_order_title">Create Order</string>
+    <string name="action_share">Share</string>
+    <string name="title_top">Top fragment</string>
+    <string-array name="beer_colors">
+        <item>player</item>
+        <item>pitch</item>
+    </string-array>
+    <string-array name="pizzas">
+        <item>Diavolo</item>
+        <item>Funghi</item>
+    </string-array>
+    <string-array name="pasta">
+        <item>Spaghetti Bolognese</item>
+        <item>Lasagne</item>
+    </string-array>
+    <string-array name="stores">
+        <item>Cambridge</item>
+        <item>Sebastopol</item>
+    </string-array>
+    <string name="home_tab">Home</string>
+    <string name="player_tab">Players</string>
+    <string name="pitch_tab">Pitches</string>
+</resources>
