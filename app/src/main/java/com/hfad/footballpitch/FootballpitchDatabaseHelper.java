@@ -30,10 +30,10 @@ class FootballpitchDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE PEOPLE (_id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                "LOGIN TEXT, " + "PASSWORD TEXT);");
+                "LOGIN VARCHAR(30), " + "PASSWORD VARCHAR(30));");
         insertPerson(db, "admin", "admin");
         db.execSQL("CREATE TABLE NOTES (_id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                "CLASS TEXT, " + "NOTETEXT TEXT);");
+                "CLASS VARCHAR(30), " + "NOTETEXT TEXT);");
         insertNote(db, "PITCH", "Let's play football on our pitch on Sunday! 401 Magnetic Drive, Unit 2\n" +
                 "for ××××\n" +
                 "Toronto, Ontario, M3J 3H9");

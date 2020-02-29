@@ -2,6 +2,7 @@ package com.hfad.footballpitch;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
@@ -40,11 +41,11 @@ public class EditNoteActivity extends AppCompatActivity {
             Toast toast = Toast.makeText(this, "Database unavailable", Toast.LENGTH_SHORT);
             toast.show();
         }
-        if (beerType == "player") {
+        if (beerType.equals("player")) {
             FootballpitchDatabaseHelper.insertNote(db, "PLAYER", String.valueOf(text.getText()));
         } else {
             FootballpitchDatabaseHelper.insertNote(db, "PITCH", String.valueOf(text.getText()));
         }
-
+        startActivity(new Intent(this, Main2Activity.class));
     }
 }
